@@ -1,0 +1,8 @@
+excluded:
+  - MVPTests
+  - MVPUITests
+  - Pods
+identifier_name:
+  min_length:
+    error: 0
+    warning: 0
