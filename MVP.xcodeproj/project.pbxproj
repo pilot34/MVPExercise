@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		26FB7AAC0EA1945D03576BD4 /* libPods-MVPTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E85FB9E41DBDA8AC2DC38CFC /* libPods-MVPTests.a */; };
 		963118F1BCA1074B16050735 /* libPods-MVP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 60DF1AE1BBA3A28E6DC4A146 /* libPods-MVP.a */; };
+		F72086BE216A75E400D0EED1 /* MVPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72086BD216A75E400D0EED1 /* MVPUITests.swift */; };
+		F72086C0216A794200D0EED1 /* XCTestCase+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72086BF216A794200D0EED1 /* XCTestCase+Extensions.swift */; };
+		F72086C2216A7B3200D0EED1 /* XCUIElement+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72086C1216A7B3200D0EED1 /* XCUIElement+Extensions.swift */; };
 		F77FAEEC2145950B00F39E38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77FAEEB2145950B00F39E38 /* AppDelegate.swift */; };
 		F77FAEF12145950B00F39E38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F77FAEEF2145950B00F39E38 /* Main.storyboard */; };
 		F77FAEF32145950C00F39E38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F77FAEF22145950C00F39E38 /* Assets.xcassets */; };
@@ -37,6 +40,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		F72086B8216A75BB00D0EED1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F77FAEE02145950B00F39E38 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F77FAEE72145950B00F39E38;
+			remoteInfo = MVP;
+		};
 		F77FAEFD2145950C00F39E38 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F77FAEE02145950B00F39E38 /* Project object */;
@@ -53,6 +63,11 @@
 		B8B47F6A12D555B0E89BE238 /* Pods-MVP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVP.release.xcconfig"; path = "Pods/Target Support Files/Pods-MVP/Pods-MVP.release.xcconfig"; sourceTree = "<group>"; };
 		BC68EBACF08229FFFABA514E /* Pods-MVPTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVPTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MVPTests/Pods-MVPTests.release.xcconfig"; sourceTree = "<group>"; };
 		E85FB9E41DBDA8AC2DC38CFC /* libPods-MVPTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MVPTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F72086B3216A75BB00D0EED1 /* MVPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F72086B7216A75BB00D0EED1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F72086BD216A75E400D0EED1 /* MVPUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVPUITests.swift; sourceTree = "<group>"; };
+		F72086BF216A794200D0EED1 /* XCTestCase+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Extensions.swift"; sourceTree = "<group>"; };
+		F72086C1216A7B3200D0EED1 /* XCUIElement+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCUIElement+Extensions.swift"; sourceTree = "<group>"; };
 		F77FAEE82145950B00F39E38 /* MVP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F77FAEEB2145950B00F39E38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F77FAEF02145950B00F39E38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -85,6 +100,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		F72086B0216A75BB00D0EED1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F77FAEE52145950B00F39E38 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -124,11 +146,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F72086B4216A75BB00D0EED1 /* MVPUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F72086BD216A75E400D0EED1 /* MVPUITests.swift */,
+				F72086B7216A75BB00D0EED1 /* Info.plist */,
+				F72086BF216A794200D0EED1 /* XCTestCase+Extensions.swift */,
+				F72086C1216A7B3200D0EED1 /* XCUIElement+Extensions.swift */,
+			);
+			path = MVPUITests;
+			sourceTree = "<group>";
+		};
 		F77FAEDF2145950B00F39E38 = {
 			isa = PBXGroup;
 			children = (
 				F77FAEEA2145950B00F39E38 /* MVP */,
 				F77FAEFF2145950C00F39E38 /* MVPTests */,
+				F72086B4216A75BB00D0EED1 /* MVPUITests */,
 				F77FAEE92145950B00F39E38 /* Products */,
 				6B1BAA985299C5FA6C2617AD /* Pods */,
 				BF5841FA1D8923D333DA995F /* Frameworks */,
@@ -140,6 +174,7 @@
 			children = (
 				F77FAEE82145950B00F39E38 /* MVP.app */,
 				F77FAEFC2145950C00F39E38 /* MVPTests.xctest */,
+				F72086B3216A75BB00D0EED1 /* MVPUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -228,6 +263,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		F72086B2216A75BB00D0EED1 /* MVPUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F72086BA216A75BB00D0EED1 /* Build configuration list for PBXNativeTarget "MVPUITests" */;
+			buildPhases = (
+				F72086AF216A75BB00D0EED1 /* Sources */,
+				F72086B0216A75BB00D0EED1 /* Frameworks */,
+				F72086B1216A75BB00D0EED1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F72086B9216A75BB00D0EED1 /* PBXTargetDependency */,
+			);
+			name = MVPUITests;
+			productName = MVPUITests;
+			productReference = F72086B3216A75BB00D0EED1 /* MVPUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		F77FAEE72145950B00F39E38 /* MVP */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F77FAF102145950C00F39E38 /* Build configuration list for PBXNativeTarget "MVP" */;
@@ -276,6 +329,10 @@
 				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "Gleb Tarasov";
 				TargetAttributes = {
+					F72086B2216A75BB00D0EED1 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = F77FAEE72145950B00F39E38;
+					};
 					F77FAEE72145950B00F39E38 = {
 						CreatedOnToolsVersion = 10.0;
 					};
@@ -300,11 +357,19 @@
 			targets = (
 				F77FAEE72145950B00F39E38 /* MVP */,
 				F77FAEFB2145950C00F39E38 /* MVPTests */,
+				F72086B2216A75BB00D0EED1 /* MVPUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		F72086B1216A75BB00D0EED1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F77FAEE62145950B00F39E38 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -384,6 +449,16 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		F72086AF216A75BB00D0EED1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F72086C2216A7B3200D0EED1 /* XCUIElement+Extensions.swift in Sources */,
+				F72086C0216A794200D0EED1 /* XCTestCase+Extensions.swift in Sources */,
+				F72086BE216A75E400D0EED1 /* MVPUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F77FAEE42145950B00F39E38 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -421,6 +496,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		F72086B9216A75BB00D0EED1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F77FAEE72145950B00F39E38 /* MVP */;
+			targetProxy = F72086B8216A75BB00D0EED1 /* PBXContainerItemProxy */;
+		};
 		F77FAEFE2145950C00F39E38 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = F77FAEE72145950B00F39E38 /* MVP */;
@@ -448,6 +528,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		F72086BB216A75BB00D0EED1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MVPUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = gleb.tarasov.MVPUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MVP;
+			};
+			name = Debug;
+		};
+		F72086BC216A75BB00D0EED1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MVPUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = gleb.tarasov.MVPUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MVP;
+			};
+			name = Release;
+		};
 		F77FAF0E2145950C00F39E38 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -649,6 +767,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F72086BA216A75BB00D0EED1 /* Build configuration list for PBXNativeTarget "MVPUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F72086BB216A75BB00D0EED1 /* Debug */,
+				F72086BC216A75BB00D0EED1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F77FAEE32145950B00F39E38 /* Build configuration list for PBXProject "MVP" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
